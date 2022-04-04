@@ -2,8 +2,8 @@ import React from "react";
 
 function Keyboard() {
     return (
-      <div>
-
+      <div className="keyboard">
+        Keyboard
       </div>
     );
   }
