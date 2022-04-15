@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     generateWordSet().then((words) => {
-      console.log(words);
+      setWordSet(words.wordSet);
     });
   }, []);
 
@@ -34,7 +34,8 @@ function App() {
     for (let i = 0; i < 5; i++) {
       currWord += board[currAttempt.attempt][i];
     }
-    if (wordSet.has(currWord)) {
+
+    if (wordSet.has(currWord.toLowerCase())) {
       setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 });
     } else {
       alert("Essa palavra não existe");
