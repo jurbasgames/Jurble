@@ -106,3 +106,13 @@ nav h1 {
 #big {
   width: 5em;
 }
+
+#correct {
+  background-color: #3aa394;
+}
+#almost {
+  background-color: #d3ad69;
+}
+#error {
+  background-color: #312a2c;
+}
