@@ -116,3 +116,7 @@ nav h1 {
 #error {
   background-color: #312a2c;
 }
+
+#disabled {
+  color: red;
+}
